@@ -1,55 +1,43 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-@import url(http://fonts.googleapis.com/css?family=Sigmar+One);
+@import url(http://fonts.googleapis.com/css?family=Exo:400,900);
 
 $font-family-sans-serif: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height: 45px;
+$navbar-inverse-bg: #27ae60;
 $navbar-inverse-link-color: #fff;
-$brand-success: #fff;
+$brand-success: #27ae60;
 $icon-font-path: 'bootstrap/'; /*Corrects the issue of not showing glyphicons */
 
 @import 'bootstrap';
 
-#home { 
-  background: url(space.jpg) 50% 0 repeat fixed; 
-  min-height: 350px; /* Allows background to go as down as possible */
-}
-
 .jumbotron {
   height: 350px;
-  color: #fff;
   background-color: transparent;
 }
 
 .jumbotron h1 {
-  font-family: 'Sigmar One', cursive;
-  color: #fff;
-}
-
-.navbar-brand {
+  font-family: 'Exo', sans-serif;
+  color: #27ae60;
   font-weight: bold;
 }
 
-.navbar-header {
-  font-family: 'Sigmar One', cursive;
+.navbar-brand {
+  font-family: 'Exo', sans-serif;
+  font-weight: bold;
 }
 
 .checkbox {
   margin-left: 22px;
 }
 
-a:link {color: #000; text-decoration: none; }
-a:active {color: #000; text-decoration: none; }
-a:visited {color: #000; text-decoration: none; }
-a:hover {color: #000; text-decoration: underline; }
-
 .new_pin {
   color: #000;
 }
 
 .panel-footer {
-  a:link {color: #000; text-decoration: none; }
-  a:active {color: #000; text-decoration: none; }
-  a:visited {color: #000; text-decoration: none; }
-  a:hover {color: #000; text-decoration: underline; }
+  a:link {color: #27ae60; font-weight: bold; text-decoration: none; }
+  a:active {color: #27ae60; font-weight: bold; text-decoration: none; }
+  a:visited {color: #27ae60; font-weight: bold; text-decoration: none; }
+  a:hover {color: #27ae60; font-weight: bold; text-decoration: underline; }
 }
 

@@ -1,7 +1,7 @@
 <%= form_for @pin, html: { multipart: true } do |f| %>
   <% if @pin.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@pin.errors.count, "error") %> prohibited this pin from being saved:</h2>
+      <h2><%= pluralize(@pin.errors.count, "erros") %> proibiram esse anúncio de ser salvo:</h2>
 
       <ul>
       <% @pin.errors.full_messages.each do |msg| %>
@@ -12,14 +12,14 @@
   <% end %>
 
   <div class="form-group">
-    <%= f.label :image %>
+    <%= f.label "Imagem" %>
     <%= f.file_field :image, class: "form-control" %>
   </div>
   <div class="form-group">
-    <%= f.label :description %>
+    <%= f.label "Descrição" %>
     <%= f.text_field :description, class: "form-control" %>
   </div>
   <div class="form-group">
-    <%= f.submit class: "btn btn-default" %>
+    <%= f.submit "Criar", class: "btn btn-success" %>
   </div>
 <% end %>
