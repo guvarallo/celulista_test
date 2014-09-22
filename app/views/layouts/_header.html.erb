@@ -20,13 +20,9 @@
         <% end %>
 
         <% if user_signed_in? %>
-        <li><%= link_to "Home", root_path%></li>
-        <li><%= link_to "Meus anúncios", my_pins_path %></li>
-          <li>
-            <%= link_to new_pin_path do %>
-              <span class="glyphicon glyphicon-plus"></span> Criar Anúncio
-            <% end %>
-          </li>
+          <li><%= link_to "Home", root_path%></li>
+          <li><%= link_to "Meus anúncios", my_pins_path %></li>
+          <li><%= link_to "Criar Anúncio", new_pin_path%></li>
           <li><%= link_to "Configurações", edit_user_registration_path %></li>  
           <li><%= link_to "Sair", destroy_user_session_path, method: :delete %></li>
         <% end %>
