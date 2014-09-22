@@ -16,6 +16,10 @@ class PinsController < ApplicationController
 
   def edit
   end
+  
+  def my_pins
+    @pins = current_user.pins.order("created_at DESC")
+  end
 
   def create
     @pin = current_user.pins.build(pin_params)
@@ -36,7 +40,7 @@ class PinsController < ApplicationController
 
   def destroy
     @pin.destroy
-    redirect_to pins_url
+    redirect_to pins_url, notice: 'Foto deletada com sucesso!'
   end
 
   private

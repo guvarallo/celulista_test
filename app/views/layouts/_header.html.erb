@@ -21,6 +21,7 @@
 
         <% if user_signed_in? %>
         <li><%= link_to "Home", root_path%></li>
+        <li><%= link_to "Meus anúncios", my_pins_path %></li>
           <li>
             <%= link_to new_pin_path do %>
               <span class="glyphicon glyphicon-plus"></span> Criar Anúncio

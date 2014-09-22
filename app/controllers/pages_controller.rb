@@ -4,4 +4,7 @@ class PagesController < ApplicationController
   
   def sobre
   end
+  
+  def my_pins
+  end
 end
