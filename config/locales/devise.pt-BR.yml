@@ -173,6 +173,15 @@ pt-BR:
     
     # Active Record
   activerecord:
+    attributes:
+      user:
+        name: "Nome"
+        password: "Senha"
+        current_password: "Senha atual"
+      pin:
+        image: "Imagem"
+        title: "Título"
+        description: "Descrição"
     errors:
       models:
         user:

@@ -9,7 +9,7 @@
       <%= devise_error_messages! %>
 
      <div class="form-group">
-       <%= f.label "Nome" %>
+       <%= f.label :name %>
        <%= f.text_field :name, class: "form-control", :autofocus => true %>
      </div>
 
@@ -19,12 +19,12 @@
       </div>
 
       <div class="form-group">
-        <%= f.label "Senha" %> <i>(deixe em branco se não desejar alterar a senha)</i>
+        <%= f.label :password %> <i>(deixe em branco se não desejar alterar a senha)</i>
         <%= f.password_field :password, class: "form-control", :autocomplete => "off" %>
       </div>
 
       <div class="form-group">
-        <%= f.label "Senha atual" %> <i>(necessitamos sua senha atual para efetuar a alteração)</i>
+        <%= f.label :current_password %> <i>(necessitamos sua senha atual para efetuar a alteração)</i>
         <%= f.password_field :current_password, class: "form-control" %>
       </div>
 
