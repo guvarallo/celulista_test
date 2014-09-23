@@ -1,5 +1,3 @@
-# A pinterest-like app in Rails
+# A place to sell and buy cellphones
 
-[Click here](http://gusteresting.herokuapp.com/) to access it on Heroku
-
-by [Gustavo Varallo](http://varallo.me)
+Developed by [Gustavo Varallo](http://varallo.me)
